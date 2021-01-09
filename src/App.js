@@ -15,7 +15,7 @@ export default function App() {
   const [repositories, setRepositories] = useState([]);
 
   async function handleLikeRepository(id) {
-    const { data } = await api.post(`repositories/${id}/like  `);
+    const { data } = await api.post(`repositories/${id}/like`);
 
     setRepositories(
       repositories.map((repository) => {
